@@ -5,6 +5,7 @@
 <title>Lab 3-2</title>
 
 <script type="text/javascript">
+<!--
 
 /******************************************************
 Define a function that takes arguments on function call
@@ -15,19 +16,6 @@ Define a function that takes returns a value
 ******************************************************/
 
 //-->
-
-function functionArgument(firstName, lastName){
-        document.write("<strong>Your first name is: ");
-        document.write(firstName + "<br />");
-        document.write("Your last name is: ");
-        document.write(lastName + "</strong>");
-}
-function functionReturn(){
-    var myProduct;
-    myProduct = document.myForm.input1.value *
-     document.myForm.input2.value;
-    return myProduct;
-}
 </script>
 
 </head>
@@ -40,8 +28,8 @@ function functionReturn(){
 <!-- Add an onclick event handler to call the function -->
 
 <form name="myForm">
-<input onclick=(functionArgument) type="button" value="Call Function with arguments" /><br />
-<input onclick=(functionReturn) type="button" value="Call Function with return" />
+<input type="button" value="Call Function with arguments" /><br />
+<input type="button" value="Call Function with return" />
 </form>
 
 </body>
