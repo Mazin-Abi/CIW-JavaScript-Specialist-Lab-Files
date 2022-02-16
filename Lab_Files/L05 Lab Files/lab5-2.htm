@@ -5,7 +5,6 @@
 <title>Lab 5-2</title>
 
 <script type="text/javascript">
-<!--
 
 /************************************************
   The checkGrade() function checks a numerical
@@ -24,11 +23,14 @@ function checkGrade(form) {
   The while loop will continue until the user 
   enters a number.
 ***********************************************/
-
-
-
-
-
+while (isNaN(myGrade)             ) {
+    myGrade = parseFloat(prompt("Please enter a numerical grade value: ", ""));
+	
+  }
+  
+  if(isNaN(myGrade) && attempts == 3){
+  return;
+  }
   
   if(myGrade >= 91) {
     alert("Your grade is an A.");

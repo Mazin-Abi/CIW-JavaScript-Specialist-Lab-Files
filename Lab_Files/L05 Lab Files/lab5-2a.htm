@@ -5,7 +5,7 @@
 <title>Lab 5-2a</title>
 
 <script type="text/javascript">
-<!--
+
 
 /************************************************
   The checkGrade() function checks a numerical
@@ -14,7 +14,7 @@
 
 function checkGrade(form) {
   var myGrade = parseFloat(form.myText.value);
-  var attempts = 1;
+  var attempts = 0;
   
 /*************************************************
   Create a while statement. In the conditional 
@@ -29,7 +29,7 @@ function checkGrade(form) {
   
   while (isNaN(myGrade)             ) {
     myGrade = parseFloat(prompt("Please enter a numerical grade value: ", ""));
-	
+	attempts = attempts + 1
   }
   
   if(isNaN(myGrade) && attempts == 3) return;
