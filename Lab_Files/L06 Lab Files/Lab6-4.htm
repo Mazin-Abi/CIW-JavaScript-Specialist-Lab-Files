@@ -4,6 +4,8 @@
 <title>Lab 6-4</title>
 
 <script type="text/javascript">
+  <!--
+  
   function writeToDocument(){
     var textColor, backColor, pageTitle;
     var yourText, pageContent, docWindow;
@@ -17,13 +19,14 @@
     pageContent += pageTitle + "</title>";
     pageContent += "<script>alert('The page ' + document.title + ' was created: ' + document.lastModified)</script>";
     pageContent += "</head><body><strong>";
-    pageContent += "</strong></body></html>";
+    pageContent += "<\/strong><\/body><\/html>";
 
-    docWindow = open("","docWin","width=250,height=150,resizable=1,status=1");
+docWindow = open("", "docWin","width=500,height=500,resizable=1,status=1");
     // Write your code here
-    with(docWindow.document);
+    with (docWindow.document) {
+      document.write(write(pageContent, yourText), bgColor = backcolor, fgColor = textcolor)
+    }
   }
-}
 
 </script>
 </head>
@@ -33,7 +36,7 @@
 <hr />
 
 <form name="myForm" id="myForm">
-<input type="button" value="Write To Remote Document" onclick="writeToDocument();" />
+<input type="button" value="Write To Remote Document" onclick="writeToDocument();"/>
 </form>
 
 </body>
