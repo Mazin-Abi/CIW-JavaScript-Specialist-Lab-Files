@@ -5,11 +5,13 @@
 <title>Lab 7-3</title>
 
 <script type="text/javascript">
-<!--
 var str = "Mark, Pete, Emily, Adam";
-
+var removed = str.replace(/Pete/g, "Betsy");
+document.write(removed)
+var splitted = str.split(", ", 3);
+document.write('\n'+ splitted)
+document.write(str.search("Emily"));
 // Your code here
-
 //-->
 </script>
 </head>
