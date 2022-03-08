@@ -5,11 +5,22 @@
 <title>Lab 8-3</title>
 
 <script type="text/javascript">
-<!--
     
 // write your code here
+var num = [1, 2, 3, 4, 5];
+for (let x of num) {
+  console.log(x);
+}
 
-
+function* integer() {
+  var number = 1;
+  while(true)
+  yield number++;
+}
+var integerv = integer(); // calling a generator function
+for(var i = 0;i<num.length;i++){
+    document.write(integerv.next().value)
+}
 //-->
 </script>
 </head>

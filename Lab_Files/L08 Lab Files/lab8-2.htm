@@ -8,8 +8,26 @@
 <!--
     
 // create a class here
+class Brand {
+ constructor(model) {
+   this.model = model;
+ }
 
+ display() {
+   document.write('The model of this computer is ' + this.model + '.');
+ }
+}
 
+class Model extends Brand {
+ constructor(s) {
+   super(s);
+   this.name = "Dell";
+   super.display();
+   document.write("The brand of this computer is " + this.name + "." );
+ }
+}
+
+var rec = new Model("Vostro");
 //-->
 </script>
 </head>
