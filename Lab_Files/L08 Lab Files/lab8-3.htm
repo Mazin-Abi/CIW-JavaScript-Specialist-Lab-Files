@@ -7,10 +7,10 @@
 <script type="text/javascript">
     
 // write your code here
-var num = [1, 2, 3, 4, 5];
-for (let x of num) {
-  console.log(x);
-}
+// var num = [1, 2, 3, 4, 5];
+// for (let x of num) {
+//   console.log(x);
+// }
 
 function* integer() {
   var number = 1;
@@ -18,7 +18,7 @@ function* integer() {
   yield number++;
 }
 var integerv = integer(); // calling a generator function
-for(var i = 0;i<num.length;i++){
+for(var i = 0;i<5;i++){
     document.write(integerv.next().value)
 }
 //-->
