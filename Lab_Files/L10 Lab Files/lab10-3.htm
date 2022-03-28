@@ -11,7 +11,10 @@
     var len = form.mySelect.length;
   
 // Create for loop
-  
+for(var i = 0;i<len;i++) {
+  if(form.mySelect.options[i].selected)
+  alert("value: " + form.mySelect.options[i].value);
+}
   
   
   
